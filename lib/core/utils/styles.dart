@@ -22,11 +22,12 @@ abstract class Styles {
     fontWeight: FontWeight.bold,
   );
   static const bookRateStyle = TextStyle(
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: FontWeight.w600,
   );
   static const ratingNumberStyle = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.normal,
+    color: AppColors.whiteGreyColor,
   );
 }
