@@ -32,4 +32,8 @@ abstract class Styles {
     fontWeight: FontWeight.normal,
     color: AppColors.whiteGreyColor,
   );
+  static const buttonTextStyle = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.normal,
+  );
 }
