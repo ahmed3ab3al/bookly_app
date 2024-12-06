@@ -1,21 +1,18 @@
 import 'package:bookly_app/core/utils/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 abstract class Styles {
   static const titleStyle18 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w600,
   );
-  static final bookNameDetailsStyle = TextStyle(
+  static const bookNameDetailsStyle = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.w600,
-    fontFamily: GoogleFonts.lora().fontFamily,
   );
-  static final bookTitleStyle = TextStyle(
+  static const bookTitleStyle = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.bold,
-    fontFamily: GoogleFonts.lora().fontFamily,
   );
   static const bookAuthorStyle = TextStyle(
     fontSize: 14,

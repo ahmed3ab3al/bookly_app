@@ -2,6 +2,7 @@ import 'package:bookly_app/core/utils/app_routers.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
@@ -39,7 +40,9 @@ class BestSellerListViewItem extends StatelessWidget {
                   children: [
                     Text(
                       'Book Name Book NameBook NameBook NameBook NameBook NameBook NameBook Name',
-                      style: Styles.bookTitleStyle,
+                      style: Styles.bookTitleStyle.copyWith(
+                        fontFamily: GoogleFonts.lora().fontFamily,
+                      ),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
