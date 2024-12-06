@@ -13,7 +13,9 @@ class BooksListView extends StatelessWidget {
         {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: ListViewItem(),
+            child: ListViewItem(
+              aspectRatio: 2/3.5,
+            ),
           );
         },
         scrollDirection: Axis.horizontal,

@@ -7,6 +7,11 @@ abstract class Styles {
     fontSize: 20,
     fontWeight: FontWeight.w600,
   );
+  static final bookNameDetailsStyle = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w600,
+    fontFamily: GoogleFonts.lora().fontFamily,
+  );
   static final bookTitleStyle = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.bold,
