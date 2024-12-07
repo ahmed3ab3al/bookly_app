@@ -21,7 +21,7 @@ class SearchResultListViewItem extends StatelessWidget {
         child: Row(
           children: [
             AspectRatio(
-              aspectRatio: 2 / 3.5,
+              aspectRatio: 2.3 / 3.5,
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
