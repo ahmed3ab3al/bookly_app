@@ -1,6 +1,7 @@
 
 class EndPoints {
-  static const String baseUrl = '';
+  static const String baseUrl = 'https://www.googleapis.com/books/';
+  static const String newest = 'v1/volumes?Filtering=free-ebooks&q=programming&Sorting=newest';
 
 }
 
