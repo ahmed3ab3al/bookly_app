@@ -11,9 +11,20 @@ class HomeRepoImplement  implements HomeRepo{
   final ApiHelper apiHelper;
   HomeRepoImplement(this.apiHelper);
   @override
-  Future<Either<Failure, List<BookModel>>> getHomeData() {
-    // TODO: implement getHomeData
-    throw UnimplementedError();
+  Future<Either<Failure, List<BookModel>>> getHomeData() async{
+    try {
+      final response = await apiHelper.get(
+          EndPoints.newest
+      );
+      List<BookModel> books = [];
+      for (var books in response['items']) {
+        books.add(BookModel.fromJson(books));
+      }
+      return right(books);
+
+    } on ServerException catch (e) {
+      return left(ServerFailure());
+    }
   }
 
 
