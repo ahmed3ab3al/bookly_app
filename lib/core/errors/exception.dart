@@ -16,7 +16,6 @@ void handleDioExceptions(DioException e) {
       throw ServerException(errorModel: ErrorModel.fromJson(e.response!.data));
     case DioExceptionType.receiveTimeout:
       throw ServerException(errorModel: ErrorModel.fromJson(e.response!.data));
-
     case DioExceptionType.sendTimeout:
       throw ServerException(errorModel: ErrorModel.fromJson(e.response!.data));
     case DioExceptionType.badCertificate:
