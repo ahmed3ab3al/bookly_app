@@ -1,6 +1,7 @@
 import 'package:bookly_app/core/api/dio_helper.dart';
 import 'package:bookly_app/core/utils/colors.dart';
 import 'package:bookly_app/core/utils/app_routers.dart';
+import 'package:bookly_app/core/utils/service_locator.dart';
 import 'package:bookly_app/features/home/data/repos/home_repo_implement.dart';
 import 'package:bookly_app/features/home/presentation/view_models/featured_books_cubit/featured_books_cubit.dart';
 import 'package:dio/dio.dart';
@@ -23,20 +24,13 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (context) => FeaturedBooksCubit(
-            HomeRepoImplement(
-              DioHelper(
-                dio: Dio(),
-              ),
-            ),
+            getIt.get<HomeRepoImplement>(),
           ),
         ),
         BlocProvider(
           create: (context) => BestSellerBooksCubit(
-            HomeRepoImplement(
-              DioHelper(
-                dio: Dio(),
-              ),
-            ),
+            getIt.get<HomeRepoImplement>(),
+
           ),
         ),
       ],
